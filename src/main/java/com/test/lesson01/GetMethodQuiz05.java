@@ -27,3 +27,4 @@ public class GetMethodQuiz05 extends HttpServlet{
 		
 	}
 }
+// 클론에서 주석 추가
