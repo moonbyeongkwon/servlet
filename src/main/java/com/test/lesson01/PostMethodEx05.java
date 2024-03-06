@@ -32,4 +32,6 @@ public class PostMethodEx05 extends HttpServlet{
 		out.print("<tr><th>닉네임</th><td>" + email + "</td></tr>");
 		out.print("</table></body></html>");
 	}
+	
+	// 깃허브 테스트용 주석
 }
