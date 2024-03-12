@@ -77,11 +77,17 @@
 				<th>제목</th>
 			</thead>
 			<tbody>
+			<%
+				for (Map<String, Object> book : list) {
+			%>
 				<tr>
-					<td></td>
-					<td></td>
-					<td></td>
+					<td><%= book.get("id") %></td>
+					<td><img src="<%= book.get("image")%>" alt="표지" width="50"></td>
+					<td><a href="/lesson02/quiz08_1.jsp?id=<%= book.get("id") %>"><%= book.get("title") %></a></td>
 				</tr>
+			<%
+				}			
+			%>
 			</tbody>
 		</table>
 	</div>
