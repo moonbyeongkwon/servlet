@@ -14,10 +14,38 @@
 <%
 	int number1 =  Integer.parseInt(request.getParameter("number1"));
 	int number2 = Integer.parseInt(request.getParameter("number2"));
-	String method = request.getParameter("method");
+	String operator = request.getParameter("operator");
 	double result = 0;
+	String printOperator = null;
+	
+	switch (operator) {
+	case "plus":
+		result = number1 + number2;
+		printOperator = "+";
+		break;
+	case "minus":
+		result = number1 - number2;
+		printOperator = "-";
+		break;
+	case "multiple":
+		result = number1 * number2;
+		printOperator = "X";
+		break;
+	case "divide":
+		result = number1 / (double) number2;
+		printOperator = "/";
+	}
 %>
-	<h1>계산 결과</h1>
-	<%= number1 %> + <%= number2 %> = <%= result %>
+	<div class="container">
+		<h1>계산 결과</h1>
+		<div class="display-3">
+			<%
+				out.print(number1 + " " + printOperator + number2 + "=");
+			%>
+			<span class="text-primary">
+			<%= result %>
+			</span>
+		</div>
+	</div>
 </body>
 </html>

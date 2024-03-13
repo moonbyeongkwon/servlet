@@ -15,13 +15,13 @@
 	<div class="container">
 		<h1>사칙 연산 계산기</h1>
 		<form method="post" action="/lesson02/quiz_calculator_1.jsp">
-			<div class="form-group d-flex">
+			<div class=" d-flex">
 				<input type="text" class="form-control col-3 mr-1" id="number1" name="number1">
-				<select class="form-control col-1 mr-1" id="method" name="method">
-					<option value="+">+</option>
-					<option value="-">-</option>
-					<option value="*">*</option>
-					<option value="/">/</option>
+				<select class="form-control col-1 mr-1" name="operator" name="operator">
+					<option value="plus">+</option>
+					<option value="minus">-</option>
+					<option value="multiple">*</option>
+					<option value="divide">/</option>
 				</select>
 				<input type="text" class="form-control col-3 mr-1" id="number2" name="number2">
 				<button type="submit" value="계산하기" class="btn btn-success">계산하기</button>
