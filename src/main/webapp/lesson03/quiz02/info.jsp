@@ -94,7 +94,7 @@ musicList.add(musicInfo);
 		
 		%>
 		<div>
-			<div class="display-4"><%= title %></div>
+			<div class="display-4"><%=  %></div>
 			<div class="text-success font-weight-bold">아이유</div>
 			<div class="d-flex text-secondary mt-3">
 				<div class="mr-4">
