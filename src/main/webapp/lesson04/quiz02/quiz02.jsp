@@ -14,7 +14,7 @@
 	MysqlService ms = MysqlService.getInstance();
 	ms.connect();
 	
-	String selectQuery = "select * from `bookmark`";
+	String selectQuery = "select * from `bookmark` order by `id` desc";
 	ResultSet result = ms.select(selectQuery);
 	
 %>
